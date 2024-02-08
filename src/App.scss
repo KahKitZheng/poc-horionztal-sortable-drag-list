@@ -1,0 +1,58 @@
+.sortable-item {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &:hover {
+    .title,
+    .description {
+      color: mediumaquamarine;
+    }
+
+    .description {
+      opacity: 0.6;
+    }
+  }
+
+  .thumbnail {
+    background-color: hsl(0, 0%, 20%);
+    height: 8rem;
+  }
+
+  .body {
+    padding: 1rem;
+    background-color: hsl(0, 0%, 10%);
+    text-align: left;
+
+    .title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .description {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}
+
+.nav-button {
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 0;
+  border-radius: 9999px;
+  font-size: 2rem;
+  position: relative;
+
+  &.left {
+    left: calc(3.5rem / 2);
+    transform: rotate(180deg);
+  }
+
+  &.right {
+    right: calc(3.5rem / 2);
+  }
+}
